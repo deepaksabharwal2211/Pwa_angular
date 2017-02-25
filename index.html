@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="finalApp">
+<head>
+	<meta charset="UTF-8">
+	<title>index_angular</title>
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.js"></script>
+	<script src="app.js"></script>
+	<script src="services.js"></script>
+</head>
+<body>
+<div ng-controller="dataCtrl">
+	<h1>{{head}}</h1>
+	<ul ng-repeat="data in dt">
+		
+		<li>
+		<p>{{data.Name}}</p><p>{{data.desc}}</p></li>
+	</ul>
+</div>
+	
+</body>
+</html>
